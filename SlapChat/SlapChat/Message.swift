@@ -12,6 +12,9 @@ import CoreData
 
 class Message: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
+    static let entityName = "Message"
+    static let sortKey = "createdAt"
+
+    // Insert code here to add functionality to your managed object subclass
 
 }

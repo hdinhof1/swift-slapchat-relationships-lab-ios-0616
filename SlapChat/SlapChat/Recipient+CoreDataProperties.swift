@@ -1,5 +1,5 @@
 //
-//  Message+CoreDataProperties.swift
+//  Recipient+CoreDataProperties.swift
 //  SlapChat
 //
 //  Created by Henry Dinhofer on 7/21/16.
@@ -12,10 +12,12 @@
 import Foundation
 import CoreData
 
-extension Message {
+extension Recipient {
 
-    @NSManaged var content: String?
-    @NSManaged var createdAt: NSDate?
-    @NSManaged var recipient: Recipient?
+    @NSManaged var name: String?
+    @NSManaged var email: String?
+    @NSManaged var phoneNumber: NSNumber?
+    @NSManaged var twitterHandle: String?
+    @NSManaged var messages: Set<Message>?
 
 }
